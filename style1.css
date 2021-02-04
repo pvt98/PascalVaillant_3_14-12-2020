@@ -1,0 +1,325 @@
+/*GENERAL*/
+
+body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  font-family: raleway, sans-serif;
+}
+
+/*HEADER*/
+
+.arrowprec {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.headerbarre {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  z-index: 10;
+  position: relative;
+}
+
+.logo {
+  width: 196px;
+  height: 34px;
+}
+
+.backgroundmenu {
+  width: 100%;
+  height: 240px;
+}
+
+.backgroundmenu img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+/*MAIN*/
+
+@keyframes fondu1 {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animfondu {
+  animation: fondu1 1s;
+}
+
+.menu {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.menuentrées h3,
+.menuplats h3,
+.menudesserts h3 {
+  font-size: 15px;
+  margin-left: 15px;
+  font-weight: 500;
+  border-bottom: 1px green solid;
+  width: 40px;
+  padding-bottom: 5px;
+}
+
+.buttonchoix {
+  height: 60px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: -1px 0px 7px 1px silver;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: white;
+}
+
+@keyframes fondueffect1 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.buttonchoix:hover .choix-prix h5 {
+  transition: all 1s;
+  margin-right: 60px;
+}
+
+.check {
+  height: 100%;
+  width: 60px;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check i {
+  font-size: 30px;
+  color: white;
+}
+
+.buttonchoix:hover .check i {
+  transform: rotate(360deg);
+  transition: transform 0.6s linear;
+}
+
+.buttonchoix:hover .check {
+  transform: translateX(0%);
+}
+
+.buttonchoix:hover .choix-prix {
+  width: 150px;
+}
+
+.choix-plat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: left;
+}
+
+.choix-txt {
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.choix-txt h4 {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-size: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.choix-txt p {
+  margin-top: 5px;
+  font-size: 14px;
+  height: 20px;
+  padding-bottom: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.choix-prix {
+  width: 50px;
+  text-align: right;
+  position: relative;
+}
+
+.choix-prix h5 {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  transition: all 1s;
+}
+
+.conteneur-command {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-command {
+  width: 200px;
+  height: 50px;
+  box-shadow: -1px 0px 7px 1px silver;
+  background: linear-gradient(#e370da, #a85ddb);
+  color: white;
+  border-radius: 100px;
+  border: 0px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.menutitrelike {
+  height: 80px;
+  width: 100%;
+  font-style: italic;
+
+  display: flex;
+}
+
+.titre-like {
+  height: auto;
+  width: 80%;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.like-titre {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  position: relative;
+}
+
+.like-titre > div {
+  position: absolute;
+  transition: 0.3s;
+}
+
+.like-white {
+  position: absolute;
+  z-index: 50;
+  background-color: white;
+}
+
+.like-black {
+  position: absolute;
+  opacity: 0;
+  z-index: 10;
+  background-image: linear-gradient(to right, #e370da, #a85ddb);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.like-white:hover ~ .like-black {
+  opacity: 1;
+}
+
+.like-white:hover {
+  opacity: 0;
+}
+
+.choix {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuentrées {
+  height: 30%;
+}
+.menuplats {
+  height: 30%;
+}
+
+.menudesserts {
+  height: 30%;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #353535;
+  height: auto;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  width: 80%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+footer ul {
+  list-style: none;
+  color: white;
+  padding-left: 0px;
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+
+.footer img {
+  width: 150px;
+  margin-top: 30px;
+}
+
+.footer-txt1 {
+  width: 70%;
+  height: auto;
+  display: flex;
+}
+
+.footer-icon {
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 20px;
+  height: auto;
+}
