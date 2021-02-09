@@ -9,22 +9,27 @@ body {
 
 /*HEADER*/
 
-.arrowprec {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  font-size: 20px;
+header {
+  height: 60px;
+  width: 100%;
+  display: flex;
 }
 
-.headerbarre {
-  width: 100%;
+.headerbarre1 {
+  width: 5%;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid white;
-  z-index: 10;
-  position: relative;
+  font-size: 20px;
+}
+
+.headerbarre2 {
+  width: 95%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
