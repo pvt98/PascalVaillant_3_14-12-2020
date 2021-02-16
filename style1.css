@@ -21,12 +21,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
 }
 
 .headerbarre2 {
   width: 95%;
-  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +46,16 @@ header {
   object-fit: cover;
   position: relative;
   z-index: -1;
+}
+
+.arrowprec {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.headerbarre1 a {
+  color: black;
 }
 
 /*MAIN*/
