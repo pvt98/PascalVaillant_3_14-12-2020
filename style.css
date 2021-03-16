@@ -4,9 +4,9 @@ body {
   width: 100%;
   height: auto;
   margin: 0px;
-  font-family: raleway, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
+/*Animation loader*/
 .loader-slide {
   border: 16px solid white; /* Light grey */
   border-top: 16px solid black; /* red */
@@ -24,7 +24,7 @@ body {
     transform: rotate(360deg);
   }
 }
-
+/*lien de la page param*/
 a {
   color: black;
 }
@@ -144,7 +144,7 @@ a:link {
   margin-top: 10px;
   margin-bottom: 40px;
 }
-
+/*bouton explorer nos restaurants*/
 .selectrestaurant .btnchoice {
   width: 200px;
   margin-left: auto;
@@ -161,8 +161,7 @@ a:link {
   height: 40px;
 }
 
-/*FONCTIONNEMENTBLOK*/
-
+/*fonctionnement*/
 .fonctionnement {
   height: 450px;
   width: 100%;
@@ -312,7 +311,7 @@ a:link {
 .texte p {
   padding-left: 10px;
 }
-
+/*anim like*/
 .restaurants-box-icon {
   width: 30%;
   display: flex;
