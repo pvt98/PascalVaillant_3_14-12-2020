@@ -97,7 +97,7 @@ header {
   font-size: 15px;
   margin-left: 15px;
   font-weight: 500;
-  border-bottom: 1px green solid;
+  border-bottom: 3px #99e2d0 solid;
   width: 40px;
   padding-bottom: 5px;
 }
